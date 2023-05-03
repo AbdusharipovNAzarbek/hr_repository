@@ -144,7 +144,7 @@ public class TaskService {
         }
     }
 
-    private User getCurrenUser() {
+    public User getCurrenUser() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         return (User) authentication.getPrincipal();
     }
